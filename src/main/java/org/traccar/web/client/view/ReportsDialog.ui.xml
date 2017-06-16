@@ -122,6 +122,9 @@
                             <container:child layoutData="{verticalLayoutData}">
                                 <form:CheckBox ui:field="preview" boxLabel="{i18n.preview}" />
                             </container:child>
+                            <container:child layoutData="{verticalLayoutData}">
+                                <form:CheckBox ui:field="details" boxLabel="Detalles" />
+                            </container:child>
                         </container:VerticalLayoutContainer>
                     </gxt:ContentPanel>
                 </container:child>

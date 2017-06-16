@@ -70,7 +70,7 @@ public abstract class ReportGenerator {
         Locale locale = new Locale(getLocale());
         dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", locale);
         dateFormat.setTimeZone(timeZone);
-        longDateFormat = new SimpleDateFormat("d MMM yyyy", locale);
+        longDateFormat = new SimpleDateFormat("dd MMM yyyy", locale);
         longDateFormat.setTimeZone(timeZone);
 
         renderer.start(report);

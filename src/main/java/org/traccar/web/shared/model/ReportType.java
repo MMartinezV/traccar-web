@@ -43,7 +43,8 @@ public enum ReportType implements IsSerializable {
         public boolean supportsFiltering() {
             return false;
         }
-    };
+    },
+    FUEL_CONSUMPTION;
 
     public boolean supportsGeoFences() {
         return false;

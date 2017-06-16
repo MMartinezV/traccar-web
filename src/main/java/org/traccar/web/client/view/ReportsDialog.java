@@ -98,6 +98,10 @@ public class ReportsDialog implements Editor<Report>, ReportsController.ReportHa
 
     @UiField
     CheckBox preview;
+    
+    // Test: to allow simple or detailed format
+    @UiField
+    CheckBox details;
 
     @UiField(provided = true)
     final ListStore<Device> deviceStore;
