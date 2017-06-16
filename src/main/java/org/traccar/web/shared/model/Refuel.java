@@ -15,7 +15,7 @@
  */
 package org.traccar.web.shared.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore; 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 import java.util.Date;
 
@@ -28,23 +28,22 @@ public class Refuel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false, unique = true)
     private long id;
-    
+
     @JsonIgnore
     private String plateNumber;
-    
+
     @Column(nullable = false)
     private float litros;
-    
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date refuelTime;
-    
+
     @Column(nullable = false)
     private double distance;
 
     public Refuel() {
     }
 
-    //public Refuel(Date refuelTime, float litros, Device device) {
     public Refuel(String plateNumber, float litros, Date refuelTime, double distance) {
         this.plateNumber = plateNumber;
         this.refuelTime = refuelTime;
@@ -67,11 +66,11 @@ public class Refuel {
     public void setRefuelTime(Date refuelTime) {
         this.refuelTime = refuelTime;
     }
-    
+
     public float getLitros() {
         return litros;
     }
-      
+
     public void setLitros(float litros) {
         this.litros = litros;
     }
@@ -79,7 +78,7 @@ public class Refuel {
     public double getDistance() {
         return distance;
     }
-      
+
     public void setDistance(double distance) {
         this.distance = distance;
     }

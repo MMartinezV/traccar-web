@@ -157,7 +157,7 @@ public class Report implements IsSerializable {
     public boolean isDisableFilter() {
         return disableFilter;
     }
-    
+
     public void setDisableFilter(boolean disableFilter) {
         this.disableFilter = disableFilter;
     }
@@ -173,7 +173,7 @@ public class Report implements IsSerializable {
         this.preview = preview;
     }
 
-    // Manu (añadimos la variable combinada con ReportsDialog.java
+    // Manu (we add the combined variable with ReportsDialog.java
     private boolean details;
 
     public boolean isDetails() {
@@ -184,7 +184,7 @@ public class Report implements IsSerializable {
         this.details = details;
     }
     // Fin Manu
-    
+
     public Report copyFrom(Report report) {
         this.id = report.id;
         this.name = report.name;
